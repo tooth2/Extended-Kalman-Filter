@@ -69,12 +69,12 @@ Check to avoid "division by zero" --> handles error where both the x and y value
 ---
 ## Result
 ### Accuracy  
-For both Dataset1 and Dataset 2 from similar, results are as follows 
-Both cases, [px, py, vx, vy] output  RMSE are less than [.11, .11, 0.52, 0.52]
-both RMSE : < [0.11, 0.11, 0.52. 0.52]
-<img src="both_Data1_zoomedout.png" alt="Data1" width="300"/>
+* For both Dataset1 and Dataset 2 from similar, results are as follows 
+* Both cases, [px, py, vx, vy] output  RMSE are less than [.11, .11, 0.52, 0.52]
+* both RMSE : < [0.11, 0.11, 0.52. 0.52]
+* <img src="both_Data1_zoomedout.png" alt="Data1" width="300"/>
 <img src="both_Data2_zoomedout.png" alt="Data2" width="300"/>
-[Dataset1 Result](both_Data1_zoomedout.png), [Dataset2 Result](both_Data2_zoomedout.png)
+* [Dataset1 Result](both_Data1_zoomedout.png), [Dataset2 Result](both_Data2_zoomedout.png)
 | Data     | (Lidar+Radar) RMSE   |
 | -------- | ------ |
 | Dataset1 | [0.0973, 0.0855, 0.4517. 0.4399] |
