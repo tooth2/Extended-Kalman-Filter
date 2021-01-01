@@ -1,5 +1,6 @@
 # Extended Kalman Filter Project
-In order to estimate the state of a moving object, the Kalman filter algorithm from statistical control theory is introduced. Common application applying Kalman filter algorithm is for control of vehicles, aircraft, spacecraft or dynamically positioned ships of interest. However, Kalman filter is based on linear quadratic estimation which lacks of non-linearity. In order to adopt non-linearity with noisy Lidar(laser) and Radar sensor measurements, this project implemented Extend Kalman Filter,a.k.a EKF, for vehicle control. EKF is considered de facto standard in the theory of nonlinear state estimation, navigation systems and GPS.
+In order to estimate the state of a moving object, the Kalman filter algorithm from statistical control theory is introduced and designed around 1960 for aerospace guidance applications. However, Kalman filter is based on linear quadratic estimation which lacks of relevant non-linearity in real-world problems. In order to adopt non-linearity with Lidar(laser) and Radar sensor measurements in the context of current self-driving car, this project implemented Extend Kalman Filter,a.k.a EKF, for vehicle control. EKF adapted multivariate Taylor-series expansions to linearize. However, if the initial estimate of the state is wrong, or if the process is modeled incorrectly, the filter may quickly diverge. Despite of drawbacks, EKF is considered de facto standard in the theory of nonlinear state estimation, navigation systems and GPS. 
+
 ### Main source code 
 1. FusionEKF.cpp, FusionEKF.h, 
 2. kalman_filter.cpp, kalman_filter.h, 
@@ -101,7 +102,8 @@ Velocity: Lidar works poor without using Radar (Vy better than Rasor only)
 Position: Radar works poor without using Lidar
 Velocity: Radar works poor without using Lidar (Vx better than Lidar only)
 This shows RADAR measurements are tend to be more more noisy than the LIDAR measurements.
-Extended Kalman Filter tracking by utilizing both measurements from both LIDAR and RADAR can reduce the noise/errors from the sensor 
+Extended Kalman Filter tracking by utilizing both measurements from both LIDAR and RADAR can reduce the noise/errors from the sensor.
+
 #### Kalmain filter variables
 	•	VectorXd x;	// object state
 	•	MatrixXd P;	// object covariance matrix
