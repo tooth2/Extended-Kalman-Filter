@@ -74,7 +74,7 @@ Check to avoid "division by zero" --> handles error where both the x and y value
 * Both cases, [px, py, vx, vy] output  RMSE are less than [.11, .11, 0.52, 0.52]
 * both RMSE : < [0.11, 0.11, 0.52. 0.52]
 
-<img src="both_Data1_zoomedout.png" alt="Data1" width="400"/> <img src="both_Data2_zoomedout.png" alt="Data2" width="400"/>
+<img src="both_Data1_zoomedout.png" alt="Data1" width="400"/><  /><  /><img src="both_Data2_zoomedout.png" alt="Data2" width="400"/>
 
 [Dataset1 Result](both_Data1_zoomedout.png) [Dataset2 Result](both_Data2_zoomedout.png)
 
