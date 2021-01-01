@@ -110,7 +110,7 @@ Extended Kalman Filter tracking by utilizing both measurements from both LIDAR a
 	•	MatrixXd R;	// measurement covariance matrix
 	•	MatrixXd I; // Identity matrix
 	•	MatrixXd Q;	// process covariance matrix
-####  Kalman Filter algorithm Summary
+#### Extended Kalman Filter algorithm Summary
 1. Initialization
 Initialized the position of the state vector based on the first measurements.
 Although radar gives velocity data in the form of the range rate ρ˙, a radar measurement does not contain enough information to determine the state variable velocities vx and vy, however, use the radar measurements rho(ρ) and phi(ϕ) to initialize the state variable locations px and py.
@@ -124,11 +124,11 @@ For lidar measurements, the error equation is y = z - H * x'.
 For radar measurements, the functions that map the x vector [px, py, vx, vy] to polar coordinates are non-linear. Instead of using H to calculate y = z - H * x', for radar measurements used the equations that map from cartesian to polar coordinates: y = z - h(x').
 
 #### Improving points 
-1. Extended Kalman Filter --> Unsented Kalman Filter 
-Extended Kalman Filter uses the Jacobian matrix to linearize non-linear functions; Unscented Kalman Filter, on the other hand, does not need to linearize non-linear functions, instead, the unscented Kalman filter takes representative points from a Gaussian distribution. These points will be plugged into the non-linear equations.
+1. Extended Kalman Filter --> Unscented Kalman Filter 
+Extended Kalman Filter uses the Jacobian matrix to linearize non-linear functions; Unscented Kalman Filter, on the other hand, does not need to linearize non-linear functions, instead, the Unscented Kalman filter takes representative points from a Gaussian distribution. These points will be plugged into the non-linear equations.
 
 2.Velocity Model 
-In this EKF, constant velocity model is regarded. For better modeling, constant turn rate and velocity magnitude model (CTRV)can be considered. For the CTRV model, two parameters define the process noise:​ representing longitudinal acceleration noise and representing yaw acceleration noise(angular acceleration).  
+In this EKF, constant velocity model is regarded. For better modeling, constant turn rate and velocity magnitude model (CTRV)can be considered. For the CTRV model, two parameters define the process noise: 1)representing longitudinal acceleration noise and 2)representing yaw acceleration noise(angular acceleration).  
 
 ---
 ## Running Environment
