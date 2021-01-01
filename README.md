@@ -1,5 +1,5 @@
 # Extended Kalman Filter Project
-In this project a kalman filter is to estimate the state of a moving object of interest with noisy Lidar(laser) and Radar sensor measurements. RMSE values is used for performance measure.
+In order to estimate the state of a moving object, the Kalman filter algorithm from statistical control theory is introduced. Common application applying Kalman filter algorithm is for control of vehicles, aircraft, spacecraft or dynamically positioned ships of interest. However, Kalman filter is based on linear quadratic estimation which lacks of non-linearity. In order to adopt non-linearity with noisy Lidar(laser) and Radar sensor measurements, this project implemented Extend Kalman Filter,a.k.a EKF, for vehicle control. EKF is considered de facto standard in the theory of nonlinear state estimation, navigation systems and GPS.
 ### Main source code 
 1. FusionEKF.cpp, FusionEKF.h, 
 2. kalman_filter.cpp, kalman_filter.h, 
