@@ -132,7 +132,7 @@ Extended Kalman Filter uses the Jacobian matrix to linearize non-linear function
 In this EKF, constant velocity model is regarded. For better modeling, constant turn rate and velocity magnitude model (CTRV)can be considered. For the CTRV model, two parameters define the process noise: 1)representing longitudinal acceleration noise and 2)representing yaw acceleration noise(angular acceleration).  
 
 3. Rasie Accuracy 
-* How to reduce Sensor Noise 
+* Reduce Sensor Noise 
 * Apply Unscented Kalman Filter to track non-linear motion more accurately 
 
 ---
