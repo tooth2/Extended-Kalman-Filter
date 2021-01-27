@@ -128,8 +128,12 @@ For radar measurements, the functions that map the x vector [px, py, vx, vy] to 
 1. Extended Kalman Filter --> Unscented Kalman Filter 
 Extended Kalman Filter uses the Jacobian matrix to linearize non-linear functions; Unscented Kalman Filter, on the other hand, does not need to linearize non-linear functions, instead, the Unscented Kalman filter takes representative points from a Gaussian distribution. These points will be plugged into the non-linear equations.
 
-2.Velocity Model 
+2. Velocity Model 
 In this EKF, constant velocity model is regarded. For better modeling, constant turn rate and velocity magnitude model (CTRV)can be considered. For the CTRV model, two parameters define the process noise: 1)representing longitudinal acceleration noise and 2)representing yaw acceleration noise(angular acceleration).  
+
+3. Rasie Accuracy 
+* How to reduce Sensor Noise 
+* Apply Unscented Kalman Filter to track non-linear motion more accurately 
 
 ---
 ## Running Environment
