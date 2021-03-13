@@ -146,4 +146,11 @@ It needs to set up and install [uWebSocketIO](https://github.com/uWebSockets/uWe
 
 ### Code Style
 Followed [Google's C++ style guide](https://google.github.io/styleguide/cppguide.html).
-
+----
+### Related Work
+- [x] [Histogram Filter](https://github.com/tooth2/HistogramFilter)
+- [x] [Kalman Filter](https://github.com/tooth2/Kalman-Filter)
+- [x] [Particle Filter](https://github.com/tooth2/Robot_Particle_Fillter)
+- [x] [Extended Kalman Filter](https://github.com/tooth2/Extended-Kalman-Filter)
+- [x] [Unscented Kalman Filter](https://github.com/tooth2/Unscented-Kalman-Filter)
+- [x] [SLAM](https://github.com/tooth2/Landmark-Detection-Tracking-SLAM)
